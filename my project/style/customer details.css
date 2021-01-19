@@ -1,0 +1,54 @@
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+            font-family: "Josefin Sans", sans-serif;
+            background: url("images/bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 20px;
+
+        }
+
+        .bg {
+            width: 100%;
+            height: 80%;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Rowdies', cursive;
+        }
+
+        .list {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border: 4px solid white;
+
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        i {
+            color: white;
+            font-size: 80px;
+            margin-left: 80px;
+        }
+
+        .click {
+
+            font-size: 25px;
+            background-color: black;
+            color: white;
+            margin-top: 20px;
+
+        }
+  

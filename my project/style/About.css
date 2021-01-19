@@ -1,0 +1,39 @@
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: url("images/online_banking.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    
+
+}
+
+.outer{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Rowdies', cursive;
+    margin-top: 40px ;
+    padding-bottom: 40px;
+    opacity: 0.9;
+}
+
+
+.box {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    text-size-adjust: auto;
+    padding: 20px;
+
+}
+
