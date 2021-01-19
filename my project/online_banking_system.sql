@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2021 at 06:01 PM
+-- Generation Time: Jan 19, 2021 at 05:53 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -39,16 +39,16 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`id`, `Name`, `Email`, `Balance`) VALUES
-(1, 'Saloni', 'saloni38@gmail.com', 35000),
+(1, 'Saloni', 'saloni38@gmail.com', 32600),
 (2, 'Anjali', 'anjali11@gmail.com', 2500),
 (3, 'Shalini', 'shalini@gmail.com', 5200),
-(4, 'Indra', 'indra@gmail.com', 800),
-(5, 'Dev', 'dev10@gmail.com', 3500),
-(6, 'Vikas', 'vikas61@gmail.com', 10000),
+(4, 'Indra', 'indra@gmail.com', 2050),
+(5, 'Dev', 'dev10@gmail.com', 4500),
+(6, 'Vikas', 'vikas61@gmail.com', 9200),
 (7, 'Bittu', 'bittu@gmail.com', 8000),
-(8, 'Rishi', 'rishi@gmail.com', 500),
-(9, 'Lado', 'lado20@gmail.com', 700),
-(10, 'Preeti', 'preeti@gmail.com', 4000);
+(8, 'Rishi', 'rishi@gmail.com', 1500),
+(9, 'Lado', 'lado20@gmail.com', 1700),
+(10, 'Preeti', 'preeti@gmail.com', 2950);
 
 -- --------------------------------------------------------
 
@@ -57,7 +57,7 @@ INSERT INTO `customer` (`id`, `Name`, `Email`, `Balance`) VALUES
 --
 
 CREATE TABLE `transaction_history` (
-  `id` int(11) NOT NULL,
+  `id` int(255) NOT NULL,
   `SenderName` text NOT NULL,
   `ReciverName` text NOT NULL,
   `Balance` int(255) NOT NULL,
@@ -69,8 +69,8 @@ CREATE TABLE `transaction_history` (
 --
 
 INSERT INTO `transaction_history` (`id`, `SenderName`, `ReciverName`, `Balance`, `dt`) VALUES
-(1, 'Saloni', 'Vikas', 350, '2021-01-17 11:56:12'),
-(2, 'Anjali', 'Dev', 200, '2021-01-17 11:56:12');
+(1, 'Saloni', 'Anjali', 500, '2021-01-19 22:20:12'),
+(2, 'Rishi', 'Lado', 200, '2021-01-19 22:20:55');
 
 --
 -- Indexes for dumped tables
@@ -102,7 +102,7 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `transaction_history`
 --
 ALTER TABLE `transaction_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
